@@ -1,7 +1,7 @@
 import { Response } from "express";
 
 /**
- * Fills the status and JSOn data into a response object.
+ * Fills the status and JSON data into a response object.
  * @param res response object
  * @param status of the response
  * @param content of the response
