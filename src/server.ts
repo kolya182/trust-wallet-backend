@@ -104,7 +104,7 @@ export class Server {
             if (!latestBlockInDb) {
                 EthereumBlockchainUtils.parseEntireBlockchain();
             } else {
-                // setup cron job for refreshing transactions fro blockchain
+                // setup cron job for refreshing transactions for blockchain
                 cron.schedule("*/15 * * * * *", () => {
                     EthereumBlockchainUtils.retrieveNewTransactionsFromBlockchain();
                 });
